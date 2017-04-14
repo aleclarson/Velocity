@@ -3,9 +3,12 @@ Type = require "Type"
 
 type = Type "Velocity"
 
-type.defineValues ->
+type.defineArgs
+  maxAge: Number
 
-  maxAge: 1000
+type.defineValues (options) ->
+
+  maxAge: options.maxAge or 1000
 
   _events: []
 
