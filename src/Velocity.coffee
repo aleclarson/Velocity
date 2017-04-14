@@ -47,9 +47,10 @@ type.defineMethods
     return
 
   reset: ->
-    @_events.length = 0
-    @_direction = 0
-    @_lastPosition = null
+    if @_events.length
+      @_events.length = 0
+      @_direction = 0
+      @_lastPosition = null
     return
 
   _prune: (ms) ->
