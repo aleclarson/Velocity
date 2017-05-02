@@ -1,0 +1,8 @@
+{
+  "name": "Velocity",
+  "version": "1.0.0",
+  "main": "js/Velocity",
+  "dependencies": {
+    "Type": "aleclarson/Type#2.4.0"
+  }
+}
